@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Young Skier’s Guide | Sue Randall</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://onlyeyedesign.com/young-skiers-guide.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sue Randall">
+<meta property="og:title" content="The Young Skier’s Guide | Sue Randall">
+<meta property="og:description" content="Visual ski racing guides for athletes and coaches, in 12 editions">
+<meta property="og:url" content="https://onlyeyedesign.com/young-skiers-guide.html">
+<meta property="og:image" content="https://onlyeyedesign.com/assets/share-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sue Randall, Creative Director and UX Strategist, smiling on a couch at home beside an arc lamp, with the Only Eye Design mark and onlyeyedesign.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Visual ski racing guides for athletes and coaches, in 12 editions">
+
+<style>
+@font-face{font-family:"Albert Sans";src:url(assets/fonts/albert-sans.woff2) format("woff2");font-weight:100 900}
+:root{--ink:#1a1b1b;--muted:#595959;--fine:#dcded9;--paper:#fcfcfa;--panel:#f1f2ee;--g:#eef2f5;--snow:#e6ecf1;--max:1200px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Albert Sans",Arial,sans-serif;font-weight:400;-webkit-font-smoothing:antialiased}
+p{margin:0;line-height:1.62}
+a{color:inherit}
+a:focus-visible{outline:2px solid #134e87;outline-offset:4px}
+.shell{max-width:var(--max);padding:0 24px;margin:auto}
+
+header.site{border-bottom:1px solid var(--fine)}
+.header{min-height:110px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand-name{font-size:17px;font-weight:500;letter-spacing:-.025em;text-decoration:none}
+.email{display:block;font-size:13px;color:var(--muted);margin-top:5px;text-decoration:none}
+nav{display:flex;gap:34px;align-items:center}
+nav a,nav span{font-size:13px;text-decoration:none}
+nav a:first-child{border-bottom:1px solid var(--ink);padding-bottom:3px}
+.private{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.12em;padding-top:18px}
+
+.intro{padding-top:92px;padding-bottom:60px}
+.eyebrow,.micro{font-size:12px;color:var(--muted);font-weight:500;letter-spacing:.13em;text-transform:uppercase}
+.intro h1{font-size:clamp(44px,5.3vw,78px);font-weight:400;letter-spacing:-.064em;line-height:1.05;margin:18px 0 24px;max-width:900px}
+.deck{font-size:clamp(18px,2vw,24px);color:#4d4f4d;line-height:1.42;max-width:780px;font-weight:300;letter-spacing:-.015em}
+.meta{display:grid;grid-template-columns:1.35fr 1.2fr .6fr 1.3fr;gap:35px;border-top:1px solid var(--fine);margin-top:62px;padding-top:20px}
+.meta-label{display:block;font-size:10px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-bottom:11px;font-weight:500}
+.meta-value{font-size:14px;line-height:1.5}
+
+.section{border-top:1px solid var(--fine);padding-top:75px;padding-bottom:85px}
+.two-col{display:grid;grid-template-columns:minmax(180px,31%) 1fr;gap:50px}
+.section h2{margin:0;font-size:clamp(25px,2.5vw,34px);font-weight:400;letter-spacing:-.046em;line-height:1.17}
+.body{font-size:17px;line-height:1.65;max-width:720px}
+.body p+p{margin-top:14px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+.step{border-top:1px solid #b8bbb7;padding-top:17px}
+.num{font-size:11px;color:var(--muted);letter-spacing:.12em}
+.step h3{font-size:20px;font-weight:500;letter-spacing:-.03em;line-height:1.25;margin:17px 0 12px}
+.step p{font-size:14px;color:#4d504d;line-height:1.55}
+figure{margin:0}
+.cap{padding:13px 0 0;font-size:12px;color:var(--muted);line-height:1.55;max-width:900px}
+.hero-cap{max-width:var(--max);margin:auto;padding:14px 24px 0;font-size:12px;color:var(--muted);line-height:1.55}
+
+
+.hero{position:relative;background:var(--g);container-type:inline-size;overflow:hidden;aspect-ratio:16/8.4;isolation:isolate}
+.stage{position:absolute;inset:0}
+
+.hero{position:relative;margin:0;background:var(--g);container-type:inline-size;overflow:hidden;aspect-ratio:16/8.4;isolation:isolate}
+.stage{position:absolute;inset:0}
+.plane{position:absolute;left:36cqw;top:-19cqw;width:112cqw;height:88cqw;transform-style:preserve-3d;
+  transform:perspective(160cqw) rotateX(44deg) rotateZ(-22deg) scale(.9)}
+
+.bk{position:absolute;aspect-ratio:var(--ar);transform-style:preserve-3d;transform:rotateZ(var(--rot));--t:.6cqw}
+.bk.op{--t:.42cqw}
+.sh{position:absolute;inset:-.2cqw;background:rgba(0,0,0,.6);filter:blur(1.2cqw);transform:translate(1cqw,1.6cqw)}
+.pg{position:absolute;inset:0;background-size:cover;background-position:center;transform-style:preserve-3d;transform:translateZ(var(--t))}
+.pg::after{content:"";position:absolute;inset:0;background:linear-gradient(155deg,rgba(255,255,255,.10),rgba(255,255,255,0) 35%,rgba(0,0,0,.10) 100%)}
+.op .pg{width:50%;background-size:200% 100%}
+.op .pg.L{left:0;background-position:0 0;transform-origin:100% 50%;transform:translateZ(var(--t)) rotateY(4deg)}
+.op .pg.R{left:50%;background-position:100% 0;transform-origin:0 50%;transform:translateZ(var(--t)) rotateY(-4deg)}
+.op .pg.L::before,.op .pg.R::before{content:"";position:absolute;inset:0;z-index:1}
+.op .pg.L::before{background:linear-gradient(90deg,rgba(0,0,0,0) 72%,rgba(0,0,0,.07) 90%,rgba(0,0,0,.24))}
+.op .pg.R::before{background:linear-gradient(270deg,rgba(0,0,0,0) 72%,rgba(0,0,0,.07) 90%,rgba(0,0,0,.24))}
+.e{position:absolute;display:block}
+.e.l,.e.r{top:0;width:var(--t);height:100%;transform-origin:0 50%;transform:rotateY(90deg);
+  background:repeating-linear-gradient(90deg,#f1eee5 0 .06cqw,#bdb8ab .06cqw .1cqw)}
+.e.l{left:0}.e.r{left:100%}
+.e.t,.e.b{left:0;width:100%;height:var(--t);transform-origin:50% 0;transform:rotateX(-90deg);
+  background:repeating-linear-gradient(180deg,#f1eee5 0 .06cqw,#bdb8ab .06cqw .1cqw)}
+.e.t{top:0}.e.b{top:100%}
+.op .pg.L .e.r,.op .pg.R .e.l{display:none}
+
+.scrim{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,var(--g) 0%,var(--g) 30%,color-mix(in srgb,var(--g) 85%,transparent) 40%,color-mix(in srgb,var(--g) 35%,transparent) 50%,color-mix(in srgb,var(--g) 0%,transparent) 60%)}
+.lockup{position:absolute;left:max(20px,calc((100cqw - 1200px)/2 + 24px));bottom:7.5cqw;color:#fff;max-width:36cqw}
+.lockup p{margin:0}
+.k{font-size:max(13px,1.15cqw);letter-spacing:.16em;text-transform:uppercase;font-weight:500;opacity:.86}
+.n{font-size:15cqw;font-weight:300;letter-spacing:-.06em;line-height:.86;margin:.6cqw 0 0 -.7cqw!important}
+.plus{font-size:.5em;vertical-align:.62em;margin-left:.04em;letter-spacing:0}
+.lbl{font-size:3.5cqw;font-weight:400;letter-spacing:-.04em;line-height:1.05;margin-top:1.1cqw!important}
+.sub{font-size:max(15px,1.35cqw);line-height:1.45;font-weight:300;color:rgba(255,255,255,.88);margin-top:1.6cqw!important;max-width:27cqw}
+
+
+.plane{left:33cqw;top:-15cqw;transform:perspective(160cqw) rotateX(44deg) rotateZ(-22deg) scale(.84)}
+.bk.op{--t:1.5cqw}
+.sh{background:rgba(40,62,86,.42);filter:blur(1.3cqw);transform:translate(.9cqw,1.5cqw)}
+.pg::after{background:linear-gradient(155deg,rgba(255,255,255,.12),rgba(255,255,255,0) 40%,rgba(20,40,60,.08) 100%)}
+.scrim{background:linear-gradient(90deg,var(--g) 0%,var(--g) 30%,color-mix(in srgb,var(--g) 88%,transparent) 40%,color-mix(in srgb,var(--g) 40%,transparent) 50%,color-mix(in srgb,var(--g) 0%,transparent) 60%)}
+.lockup{color:var(--ink)}
+.plus{display:none}
+.lbl{color:var(--ink)}
+.sub{color:#3d4247;max-width:25cqw}
+
+
+.bk{position:absolute;aspect-ratio:var(--ar);transform-style:preserve-3d;transform:rotateZ(var(--rot))}
+.bk .sh{position:absolute;inset:0;background:rgba(36,52,72,.34);filter:blur(1cqw);transform:translate(.5cqw,.9cqw)}
+.bk .pg{position:absolute;inset:0;background-size:100% 100%;background-position:center;transform-style:preserve-3d;transform:translateZ(var(--t))}
+.bk .pg::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,0) 40%,rgba(20,30,40,.05))}
+
+.bk .e{position:absolute;display:block;background:linear-gradient(90deg,#f6f4ee,#e3dfd5)}
+.bk .e.l,.bk .e.r{top:0;width:var(--t);height:100%;transform-origin:0 50%;transform:rotateY(90deg)}
+.bk .e.l{left:0}.bk .e.r{left:100%}
+.bk .e.t,.bk .e.b{left:0;width:100%;height:var(--t);transform-origin:50% 0;transform:rotateX(-90deg);background:linear-gradient(180deg,#f6f4ee,#e3dfd5)}
+.bk .e.t{top:0}.bk .e.b{top:100%}
+
+.bk.ab .e.l{background:var(--spine)}
+.bk.ab .pg::before{content:"";position:absolute;top:0;bottom:0;left:3.2%;width:.6%;z-index:1;
+  background:linear-gradient(90deg,rgba(0,0,0,.16),rgba(0,0,0,.05) 45%,rgba(255,255,255,.14) 55%,rgba(255,255,255,0))}
+
+.bk.as .pg::before{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,rgba(0,0,0,.035) 0%,rgba(0,0,0,0) 6%,rgba(0,0,0,0) 41%,rgba(0,0,0,.05) 46%,rgba(255,255,255,.10) 47.6%,rgba(0,0,0,.10) 49.2%,rgba(0,0,0,.20) 50%,rgba(0,0,0,.10) 50.8%,rgba(255,255,255,.10) 52.4%,rgba(0,0,0,.05) 54%,rgba(0,0,0,0) 59%,rgba(0,0,0,0) 94%,rgba(0,0,0,.035) 100%)}
+
+.bk .leaf{position:absolute;left:0;width:100%;background-size:100% 100%;transform:translateZ(.25cqw)}
+.bk.cg .leaf.cover{top:0;height:100%;border-radius:0 0 7% 7% / 0 0 4.8% 4.8%;
+  box-shadow:0 .06cqw 0 #e9e6dd,0 .12cqw 0 #dcd8cd,0 .18cqw 0 #e9e6dd,0 .24cqw 0 #cfcabe}
+.bk.cg .sh{border-radius:0 0 7% 7% / 0 0 4.8% 4.8%}
+.bk.co .leaf.top{top:0;height:49.13%;border-radius:7% 7% 0 0 / 4.8% 4.8% 0 0;box-shadow:0 -.08cqw 0 #e9e6dd,0 -.16cqw 0 #d6d2c7}
+.bk.co .leaf.bot{bottom:0;height:49.08%;border-radius:0 0 7% 7% / 0 0 4.8% 4.8%;box-shadow:0 .08cqw 0 #e9e6dd,0 .16cqw 0 #d6d2c7}
+.bk.co .sh{border-radius:4%}
+.bk .coil{position:absolute;left:5%;right:5%;transform:translateZ(.45cqw)}
+.bk .coil.edge{top:-2.2%;height:7.2%;background-image:url(assets/img/ysg-01.svg);background-size:9.09% 100%;background-repeat:repeat-x}
+.bk .coil.mid{top:47.97%;height:4.12%;background-image:url(assets/img/ysg-02.svg);background-size:9.09% 100%;background-repeat:repeat-x}
+
+
+
+.tbl{position:relative;container-type:inline-size;background:var(--snow);overflow:hidden;aspect-ratio:var(--a,16/8)}
+.fplane{position:absolute;inset:0;transform-style:preserve-3d;transform-origin:50% 50%;transform:perspective(170cqw) rotateX(var(--rx,30deg)) rotateZ(var(--rz,-6deg)) scale(var(--s,1))}
+.wide.tight{margin-top:40px}
+.wide{margin-top:52px;width:100vw;margin-left:calc(50% - 50vw)}
+.wide-stage{background:var(--snow);padding:52px 40px}
+.wide-stage img{display:block;width:100%;max-width:1120px;margin:auto;height:auto;box-shadow:0 14px 34px rgba(30,50,70,.18)}
+.wide .cap{max-width:var(--max);margin:auto;padding:14px 24px 0}
+.panel{margin-top:48px;background:#f3f3f1;padding:34px}
+.panel img{display:block;width:100%;max-width:760px;margin:auto;height:auto}
+.panel .cap{max-width:760px;margin:auto}
+.scan{display:flex;gap:18px;align-items:center}
+.scan .qr{width:120px;height:120px;flex:none;background:#fff;padding:6px;border:1px solid var(--fine);image-rendering:pixelated}
+.scan b{font-weight:500;color:var(--ink)}
+
+.end{padding:65px 0 110px;border-top:1px solid var(--fine)}
+.endgrid{display:grid;grid-template-columns:31% 1fr;gap:50px}
+.end h2{font-size:34px;letter-spacing:-.04em;font-weight:400;margin:0}
+.outcome{max-width:690px;font-size:17px;line-height:1.6}
+.outcome p+p{margin-top:16px}
+.outcome h3{font-size:13px;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin:34px 0 10px}
+
+footer{background:#f4f5f2}
+.foot{min-height:140px;display:flex;justify-content:space-between;align-items:center;gap:18px;font-size:12px;color:var(--muted)}
+.foot strong{color:#222;font-size:14px;font-weight:500}
+
+@media (max-width:780px){
+  .shell{padding:0 24px}
+  .header{min-height:88px}
+  nav{gap:16px}
+  .intro{padding:64px 0 42px}
+  .meta{grid-template-columns:1fr 1fr;gap:22px 16px;margin-top:42px}
+  .section{padding-top:50px;padding-bottom:58px}
+  .two-col,.endgrid{grid-template-columns:1fr;gap:22px}
+  .three{grid-template-columns:1fr;gap:16px;margin-top:30px}
+  .end{padding:52px 0 60px}
+  .foot{align-items:start;min-height:124px;padding:35px 20px;flex-direction:column;gap:7px}
+  .hero{aspect-ratio:auto;display:flex;flex-direction:column}
+  .lockup{order:0;position:relative;left:auto;bottom:auto;padding:34px 20px 0;max-width:none;z-index:3}
+  .n{font-size:30cqw}
+  .lbl{font-size:8.5cqw}
+  .sub{max-width:none;font-size:16px;margin-top:10px!important}
+  .stage{order:1;position:relative;inset:auto;aspect-ratio:1/1;margin-top:4cqw;overflow:hidden}
+  .plane{left:-4cqw;top:-10cqw;transform:perspective(160cqw) rotateX(44deg) rotateZ(-22deg) scale(1.45)}
+  .scrim{display:none}
+  .nomob{display:none}
+  .hero-cap{padding:12px 20px 0}
+  .wide-stage{padding:16px}
+  .wide .cap{padding:12px 20px 0}
+  .panel{padding:16px;margin-top:34px}
+  .scan{align-items:flex-start}
+  .scan .qr{width:96px;height:96px}
+  
+  .fig-encz{aspect-ratio:1/1.12!important}
+  .fig-encz .bk{width:38cqw!important}
+  .fig-encz .bk:nth-child(1){left:9cqw!important;top:4cqw!important}
+  .fig-encz .bk:nth-child(2){left:53cqw!important;top:3cqw!important}
+  .fig-encz .bk:nth-child(3){left:9cqw!important;top:57cqw!important}
+  .fig-encz .bk:nth-child(4){left:53cqw!important;top:56cqw!important}
+}
+
+.orgs{margin-top:56px;background:var(--panel);border-radius:0;padding:34px 40px 40px}
+.orgs-lab{text-align:center;margin:0 0 18px}
+.orgs-client{display:flex;justify-content:center;padding-bottom:28px;margin-bottom:28px;border-bottom:1px solid var(--fine)}
+.orgs-client img{display:block;width:auto}
+.orgs-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:40px 32px;align-items:center;justify-items:center}
+.orgs-grid img{display:block;width:auto;max-width:100%;opacity:.8}
+@media (max-width:780px){.orgs{padding:26px 20px 30px}.orgs-grid{grid-template-columns:repeat(2,1fr);gap:30px 20px}.orgs-grid img{transform:scale(.85)}}
+
+header.sx{position:sticky;top:0;z-index:60;background:#fff;border:0;border-bottom:1px solid #e4e4e2;margin:0;padding:0;font-family:"Albert Sans",Arial,sans-serif;color:#111}
+.sx-in{max-width:1200px;margin:0 auto;padding:0 24px;min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.sx-who{display:flex;align-items:center;gap:14px}
+.sx-ava{position:relative;width:44px;height:44px;flex:none}
+.sx-ava img{width:44px;height:44px;border-radius:50%;object-fit:cover;filter:grayscale(1);display:block;border:1px solid #e4e4e2}
+.sx-dot{position:absolute;right:-1px;bottom:1px;width:11px;height:11px;border-radius:50%;background:#D5D10E;border:2px solid #fff}
+.sx-tip{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%);white-space:nowrap;background:#111;color:#fff;font-size:12px;line-height:1;padding:7px 9px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .15s;z-index:70}
+.sx-ava:hover .sx-tip{opacity:1}
+.sx-mail{display:block;font-size:14px;line-height:24px;color:#595959;text-decoration:none;margin-top:0}
+.sx-mail:hover{text-decoration:underline}
+.dk-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.sx-name{display:block;font-size:16px;line-height:24px;font-weight:500;letter-spacing:-.02em;text-decoration:none;color:#111}
+.sx-st{display:inline-flex;align-items:center;gap:8px;min-height:24px;font-size:14px;color:#3a3a3a;text-decoration:none;white-space:nowrap}
+.sx-st i{width:9px;height:9px;border-radius:50%;background:#D5D10E;flex:none}
+.sx-st:hover{color:#111;text-decoration:underline;text-underline-offset:4px}
+.sx-hr{display:flex;align-items:center;gap:16px}
+.sx-nav{display:flex;gap:30px}
+.sx-nav a{font-size:15px;color:#111;text-decoration:none;padding:6px 0;border-bottom:1px solid transparent}
+.sx-nav a:hover{border-bottom-color:#e4e4e2}
+.sx-nav a[aria-current]{border-bottom-color:#111}
+.sx-li{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;color:#595959;margin-right:-11px}
+.sx-li:hover{color:#111}
+.sx-li svg{width:21px;height:21px}
+header.sx a:focus-visible{outline:2px solid #111;outline-offset:3px}
+footer.dk{background:#1B1917;color:#F2EEE7;margin:0;padding:0;border:0;font-family:"Albert Sans",Arial,sans-serif;text-align:left}
+.dk-in{max-width:1200px;margin:0 auto;padding:80px 24px 0}
+.dk-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.dk-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end;padding-bottom:72px}
+.dk-big{margin:0;font-size:clamp(36px,4.4vw,58px);font-weight:300;letter-spacing:-.035em;line-height:1.1;color:#F2EEE7}
+.dk-avail{margin:18px 0 0;font-size:15px;color:#B9B2A8}
+.dk-mail span{display:block;font-size:13px;color:#B9B2A8;margin-bottom:6px}
+.dk-mail a{display:inline-flex;align-items:center;gap:10px;font-size:clamp(20px,2vw,26px);letter-spacing:-.01em;color:#F2EEE7;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;overflow-wrap:anywhere}
+.dk-mail a svg{width:20px;height:20px;flex:none}
+.dk-bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid #3a3733;padding:22px 0 30px;font-size:14px;color:#B9B2A8}
+.dk-bot nav{display:flex;gap:24px;flex-wrap:wrap}
+.dk-bot a{color:#F2EEE7;text-decoration:none;padding:3px 0}
+.dk-bot a:hover{text-decoration:underline}
+footer.dk a:focus-visible{outline:2px solid #F2EEE7;outline-offset:3px}
+@media (max-width:700px){
+  header.sx{position:static}
+  .sx-in{flex-wrap:wrap;row-gap:12px;padding:16px 16px 4px;min-height:0}
+  .sx-hr{width:100%;border-top:1px solid #e4e4e2;padding-top:4px}
+  .sx-nav{gap:22px}.sx-li{margin-left:auto}
+  .dk-in{padding:52px 16px 0}.dk-top{grid-template-columns:1fr;gap:32px;padding-bottom:48px}.dk-bot{flex-direction:column}
+}
+.sx-skip{position:absolute;left:-9999px;top:8px;background:#fff;padding:8px 12px;border:2px solid #111;z-index:70;color:#111}.sx-skip:focus{left:16px}
+blockquote,blockquote p,.rq p{text-wrap:pretty}.btn,.chip{border-radius:0!important}p,li,dd,figcaption{text-wrap:pretty}
+.review{background:#fbf6dc;color:#4a4320;font:12px/1.4 "Albert Sans",Arial,sans-serif;letter-spacing:.04em;padding:9px 24px;text-align:center;margin:0!important;border:0!important}@media (max-width:760px){.review{padding:9px 16px}}
+.eyebrow a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.eyebrow a:hover{color:var(--ink)}.eyebrow a:focus-visible{outline:2px solid #111;outline-offset:3px}body{overflow-x:clip}.meta-value{font-size:15px!important}.eyebrow{line-height:1.7}@media (max-width:700px){.shell,.hero-cap,.wide .cap,.feature-caption,.ways-inner,.ways-strip figcaption,.duo-lock{padding-left:16px!important;padding-right:16px!important}}footer.dk nav{display:flex!important;gap:24px!important;padding-top:0!important}footer.dk nav a{font-size:14px!important;border-bottom:0!important;padding:3px 0!important}@media (max-width:780px){.sx-tip{left:0!important;transform:none!important}}.sx-who:focus-within .sx-tip{opacity:1}
+.meta-label{font-size:12px!important;letter-spacing:.12em!important}.step .num,.num{font-size:12px!important}
+.meta.meta-result{display:block!important;margin-top:0!important;border-top:0!important;padding-top:24px!important}
+.cm{display:block;max-width:56ch;text-wrap:pretty}
+
+.nx{display:block!important;gap:0!important;padding:0!important;border-top:1px solid #e4e4e2;background:transparent;color:#111;font-family:"Albert Sans",Arial,sans-serif}
+.nx a{border-bottom:0!important;padding-bottom:0!important}
+.nx span{font-size:inherit!important;color:inherit!important}.nx .nx-img,.nx .nx-img img{display:block!important}
+.nx-in{box-sizing:border-box;max-width:1200px;margin:0 auto;padding:72px 24px 96px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,480px);gap:40px 72px;align-items:center}
+.nx-in.solo{grid-template-columns:minmax(0,1fr)}
+.nx-lab{margin:0 0 14px;font-size:12px;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:#595959}
+.nx-go{display:inline;color:#111;text-decoration:none;font-size:clamp(28px,3.2vw,44px);font-weight:300;letter-spacing:-.03em;line-height:1.12}
+.nx-go span{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.16em;text-decoration-color:#c9c9c6}
+.nx-go:hover span,.nx-go:focus-visible span{text-decoration-color:#111}
+.nx-go svg{display:inline-block;width:.6em;height:.6em;margin-left:.3em;vertical-align:-.02em;transition:transform .2s ease}
+.nx-go:hover svg,.nx-go:focus-visible svg{transform:translateX(4px)}
+.nx-sub{margin:14px 0 0;font-size:17px;line-height:1.5;color:#595959;max-width:46ch}
+.nx-all{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:22px;color:#111;font-size:16px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.nx-all svg{width:16px;height:16px;transition:transform .2s ease}
+.nx-all:hover svg,.nx-all:focus-visible svg{transform:translateX(-3px)}
+.nx-img{display:block}
+.nx-img img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.nx a:focus-visible{outline:2px solid #111;outline-offset:4px}
+.nx-go{-webkit-box-decoration-break:clone;box-decoration-break:clone}
+@media (prefers-reduced-motion:reduce){.nx-go svg,.nx-all svg{transition:none}}
+@media (max-width:1000px){.nx-in{grid-template-columns:minmax(0,1fr) minmax(0,40%);gap:40px}}
+@media (max-width:700px){.nx-in{grid-template-columns:minmax(0,1fr);padding:48px 16px 64px;gap:28px}.nx-img{order:-1}}
+.nx .nw{white-space:nowrap}
+</style>
+</head>
+<body>
+<a class="sx-skip" href="#main">Skip to content</a><header class="sx" id="top"><div class="sx-in"><div class="sx-who"><span class="sx-ava"><img src="assets/img/home-01.jpg" alt="" width="44" height="44"><span class="sx-dot" aria-hidden="true"></span><span class="sx-tip" role="tooltip" aria-hidden="true">Available for work</span></span><span><a class="sx-name" href="./">Sue Randall</a><a class="sx-mail" href="mailto:sue@onlyeyedesign.com">sue@onlyeyedesign.com</a><span class="dk-sr">Available for work</span></span></div><div class="sx-hr"><nav class="sx-nav" aria-label="Main navigation"><a href="./#work" aria-current="true">Work</a><a href="about.html">About</a><a href="resume.html">Resume</a></nav><a class="sx-li" href="https://www.linkedin.com/in/suerandall" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5v6M8 7.6v.01M12 16.5v-6M12 13.6c0-1.8 1.1-3.1 2.6-3.1s2.4 1.1 2.4 3v3"/></svg></a></div></div></header>
+<main id="main">
+<div class="shell">
+  
+  <section class="intro">
+    <div class="eyebrow"><a href="./#work">Selected work</a>&nbsp;&nbsp;/&nbsp;&nbsp;Far West Development Initiative</div>
+    <h1>The Young<br>Skier’s Guide</h1>
+    <p class="deck">A visual guide to ski racing fundamentals for young racers and their coaches, co-branded for ten clubs, academies and federations, including a Czech-language edition.</p>
+    <div class="meta">
+      <div><span class="meta-label">Clients</span><span class="meta-value">Far West Development Initiative, plus ten clubs, academies and federations</span></div>
+      <div><span class="meta-label">My role</span><span class="meta-value">Design&nbsp;· Project management&nbsp;· Production</span></div>
+      <div><span class="meta-label">Year</span><span class="meta-value">2018–2025</span></div>
+      <div><span class="meta-label">Tools</span><span class="meta-value">InDesign&nbsp;· Photoshop&nbsp;· Illustrator&nbsp;· Acrobat&nbsp;· Squarespace</span></div>
+    </div><div class="meta meta-result"><div><span class="meta-label">Result</span><span class="meta-value">Twelve editions since 2018, every one delivered on time</span></div></div>
+  </section>
+</div>
+
+<figure>
+  <div class="hero">
+    <div class="stage" role="img" aria-label="Twelve editions of The Young Skier's Guide laid out on a snow-white ground in an even grid, each cover in its organization's color with a band of its own athletes' photos and its logo: Ski & Snowboard Club Vail, Aspen Valley, Burke Mountain Academy, Sun Valley, Steamboat Springs, Winter Park, NYSEF, Winter4Kids, Bridger Ski Foundation, the Czech Ski Association, the generic edition and Far West. On top, the athlete booklet open to its Key Concepts spread with a Marcel Hirscher photomontage, and the coach pocket guide, spiral-bound at the top, open to a Mikaela Shiffrin slalom page and closed.">
+      <div class="plane">
+      <div class="bk ab" style="left:12cqw;top:0cqw;width:11cqw;--rot:0deg;z-index:1;--ar:0.7725;--t:0.231cqw;--spine:rgb(104,122,166)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-03.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab" style="left:24.5cqw;top:0cqw;width:11cqw;--rot:0deg;z-index:2;--ar:0.7725;--t:0.231cqw;--spine:rgb(71,93,91)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-04.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab" style="left:37cqw;top:0cqw;width:11cqw;--rot:0deg;z-index:3;--ar:0.7725;--t:0.231cqw;--spine:rgb(59,66,83)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-05.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab" style="left:49.5cqw;top:0cqw;width:11cqw;--rot:0deg;z-index:4;--ar:0.7725;--t:0.231cqw;--spine:rgb(55,68,91)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-06.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab nomob" style="left:62cqw;top:0cqw;width:11cqw;--rot:0deg;z-index:5;--ar:0.7725;--t:0.231cqw;--spine:rgb(78,110,153)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-07.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab" style="left:12cqw;top:16.5cqw;width:11cqw;--rot:0deg;z-index:6;--ar:0.7725;--t:0.231cqw;--spine:rgb(86,113,164)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-08.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab" style="left:24.5cqw;top:16.5cqw;width:11cqw;--rot:0deg;z-index:7;--ar:0.7725;--t:0.231cqw;--spine:rgb(87,133,154)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-09.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab" style="left:37cqw;top:16.5cqw;width:11cqw;--rot:0deg;z-index:8;--ar:0.7725;--t:0.231cqw;--spine:rgb(119,116,121)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-10.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab" style="left:49.5cqw;top:16.5cqw;width:11cqw;--rot:0deg;z-index:9;--ar:0.7725;--t:0.231cqw;--spine:rgb(78,84,90)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-11.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab nomob" style="left:62cqw;top:16.5cqw;width:11cqw;--rot:0deg;z-index:10;--ar:0.7725;--t:0.231cqw;--spine:rgb(70,112,154)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-12.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab" style="left:12cqw;top:33cqw;width:11cqw;--rot:0deg;z-index:11;--ar:0.7725;--t:0.231cqw;--spine:rgb(85,122,162)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-13.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk ab" style="left:24.5cqw;top:33cqw;width:11cqw;--rot:0deg;z-index:12;--ar:0.7725;--t:0.231cqw;--spine:rgb(73,95,121)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-14.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk as" style="left:38cqw;top:33cqw;width:40cqw;--rot:-2.5deg;z-index:13;--ar:1.545;--t:0.240cqw"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-15.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+      <div class="bk co" style="left:21.5cqw;top:45cqw;width:6.5cqw;--rot:3.5deg;z-index:14;--ar:0.33560566334556896"><div class="sh"></div><div class="leaf top" style="background-image:url(assets/img/ysg-16.jpg)"></div><div class="coil mid"></div><div class="leaf bot" style="background-image:url(assets/img/ysg-17.jpg)"></div></div>
+      <div class="bk cg" style="left:30cqw;top:49.5cqw;width:6.2cqw;--rot:-6deg;z-index:15;--ar:0.6779661016949152"><div class="sh"></div><div class="leaf cover" style="background-image:url(assets/img/ysg-18.jpg)"></div><div class="coil edge"></div></div>
+      </div>
+    </div>
+    <div class="scrim" aria-hidden="true"></div>
+    <div class="lockup">
+      <p class="n">12</p>
+      <p class="lbl">editions</p>
+      <p class="sub">For ten clubs, academies and federations, including a Czech-language edition for the Czech Ski Association, plus Far West’s own and a generic edition other clubs could personalize.</p>
+    </div>
+  </div>
+  <figcaption class="hero-cap"><span class="cm">The athlete booklet and coach pocket guide in their co-branded editions. Photomontages © Ron LeMaster.</span></figcaption>
+</figure>
+
+<div class="shell">
+  <section class="section two-col" style="margin-top:90px">
+    <div><span class="micro">01 / Context</span><h2 style="margin-top:18px">The challenge</h2></div>
+    <div class="body">
+      <p>Far West Development Initiative (FWDI) wanted young racers to learn the fundamentals that even the best World Cup skiers keep coming back to, and to hear them in the same words from their coaches.</p>
+      <p>The first book was for the racers of Far West Skiing. Once other clubs and academies saw it, they wanted editions of their own, so the job became producing co-branded books across the country, affordably, and in hand when each club and academy needed them.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="two-col">
+      <div><span class="micro">02 / Two books</span><h2 style="margin-top:18px">Two books,<br>one language.</h2></div>
+      <div class="body">
+        <p>The guide is built around nine key concepts and Ron LeMaster’s photomontages of World Cup racers, including Mikaela Shiffrin and Marcel Hirscher. It grew with the program into an 84-page athlete booklet, long enough to move to perfect binding, alongside a pocket guide for coaches. I created the original design and page system, did all of the layout and copy edited the book. On the first book, I also worked with Ron LeMaster and a writer to match each concept with the photomontage and video that show it best.</p>
+        <p><strong>The athlete booklet is a visual guide.</strong> It’s built to be studied, not skimmed. Each concept gets a full-page photomontage with the key body positions labeled, so a young racer can see how each fundamental looks at the highest level. The book asks athletes to spend time with the pictures and imagine themselves inside the racer’s body, on their skis, feeling each position, instead of watching like a spectator.</p>
+        <p><strong>The coach pocket guide gives coaches and athletes a common language.</strong> It carries the same photomontages and the same nine key concepts, with notes on what to look for, why it matters and the exceptions. On the hill, coaching can be as simple as pointing to a position in the picture and saying “do that.” Because both books use the same images and the same words, a racer hears on the hill exactly what they studied at home.</p>
+        <p>The coach guide is spiral-bound at the top on waterproof, tear-resistant paper, so it flips open and holds up on snow. We considered a digital version for phones, but coaches wanted a flipbook they could pull from a pocket, and cell service on a race hill can’t be counted on.</p>
+      </div>
+    </div>
+    <figure class="wide">
+      <div class="tbl fig-shiffrin" style="--a:16/8.6" role="img" aria-label="Athlete booklet open to a Technique spread: a Mikaela Shiffrin giant slalom photomontage running across both pages, with notes on upper body facing downhill and equal ankle flexion"><div class="fplane" style="--rx:24deg;--rz:-7deg;--s:1"><div class="bk as" style="left:12cqw;top:2cqw;width:76cqw;--rot:0deg;z-index:1;--ar:1.545;--t:0.456cqw"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-19.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div></div></div>
+      <figcaption class="cap"><span class="cm">Athlete booklet, Technique: Mikaela Shiffrin, giant slalom. Photomontage © Ron LeMaster.</span></figcaption>
+    </figure>
+    <figure class="wide tight">
+      <div class="tbl fig-formats" style="--a:16/8.8" role="img" aria-label="The Far West Skiing athlete booklet beside the much smaller coach pocket guide, shown to scale, with a second coach guide flipped open over its top spiral to a Mikaela Shiffrin slalom page and its coaching notes"><div class="fplane" style="--rx:28deg;--rz:-10deg;--s:1"><div class="bk ab" style="left:20cqw;top:6cqw;width:34cqw;--rot:-3deg;z-index:1;--ar:0.7725;--t:0.714cqw;--spine:rgb(73,95,121)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-20.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+<div class="bk cg" style="left:57cqw;top:21cqw;width:16cqw;--rot:4deg;z-index:2;--ar:0.6779661016949152"><div class="sh"></div><div class="leaf cover" style="background-image:url(assets/img/ysg-18.jpg)"></div><div class="coil edge"></div></div>
+<div class="bk co" style="left:76cqw;top:4.5cqw;width:16cqw;--rot:-2deg;z-index:3;--ar:0.33560566334556896"><div class="sh"></div><div class="leaf top" style="background-image:url(assets/img/ysg-16.jpg)"></div><div class="coil mid"></div><div class="leaf bot" style="background-image:url(assets/img/ysg-17.jpg)"></div></div></div></div>
+      <figcaption class="cap"><span class="cm">The 84-page athlete booklet and the 54-page coach pocket guide, to scale, in the Far West Skiing edition. The coach guide is printed on waterproof, tear-resistant paper and flips over a spiral at the top.</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <span class="micro">03 / The program</span>
+    <div class="two-col" style="margin-top:18px">
+      <h2>One system,<br>many editions.</h2>
+      <div class="body">
+        <p>One design system carried every edition, and each was still its own book: a cover in the organization’s color with a band of its own athletes’ photos and its logo, its own intro pages up front and its own club pages at the back. Editions could open with a letter from a World Cup athlete tied to the club, such as Mikaela Shiffrin for Ski &amp; Snowboard Club Vail and Julia Mancuso for Far West, and a generic edition let other clubs add their own sticker.</p>
+        <p>Each organization supplied its own photography, logos and localized content, including the Czech Ski Association’s Czech text. Over the years, I designed each edition’s intro and club pages from that content within the original design, reviewed and copy edited its text, and prepared every edition for print. After the original book, each club, academy and federation worked with me directly on its own edition, so the work ran as an ongoing program with many clients, not a string of one-off jobs.</p>
+      </div>
+    </div>
+
+    
+    <div class="orgs" aria-labelledby="orgs-h">
+      <p class="micro orgs-lab">Created for</p>
+      <div class="orgs-client"><img src="assets/img/ysg-21.png" alt="Far West Development Initiative and Far West Skiing" style="height:54px"></div>
+      <p class="micro orgs-lab" id="orgs-h">Editions for ten clubs, academies and federations</p>
+      <ul class="orgs-grid"><li><img src="assets/img/ysg-22.png" alt="Aspen Valley Ski & Snowboard Club" style="height:56px"></li><li><img src="assets/img/ysg-23.png" alt="Bridger Ski Foundation" style="height:42px"></li><li><img src="assets/img/ysg-24.png" alt="Burke Mountain Academy" style="height:36px"></li><li><img src="assets/img/ysg-25.png" alt="Czech Ski Association" style="height:52px"></li><li><img src="assets/img/ysg-26.png" alt="New York State Ski Educational Foundation" style="height:50px"></li><li><img src="assets/img/ysg-27.png" alt="Ski & Snowboard Club Vail" style="height:44px"></li><li><img src="assets/img/ysg-28.png" alt="Steamboat Springs Winter Sports Club" style="height:52px"></li><li><img src="assets/img/ysg-29.png" alt="Sun Valley Ski Education Foundation" style="height:31px"></li><li><img src="assets/img/ysg-30.png" alt="Winter Park Competition Center" style="height:33px"></li><li><img src="assets/img/ysg-31.png" alt="Winter4Kids" style="height:53px"></li></ul>
+    </div>
+    <div class="three">
+      <div class="step"><div class="num">01 / INTAKE</div><h3>Content and approvals</h3><p>Each organization filled in an intake form and dropped its photos, logo, intro letter and copy into a shared Google Drive folder. I worked with each one on its pages and approvals, so every edition could turn around fast.</p></div>
+      <div class="step"><div class="num">02 / PRINT RUNS</div><h3>Shared runs to control cost</h3><p>Each organization ordered its own quantity, so I worked out print and shipping costs with each one. Where schedules allowed, I grouped editions into shared gang runs to split setup costs: on one later run, the shared interior pages printed once for several editions, with covers and club pages printed separately. Meeting each group deadline saved the clubs money, so I held managers to it.</p></div>
+      <div class="step"><div class="num">03 / PRODUCTION</div><h3>Print to delivery</h3><p>Many organizations sent low-resolution web photos, so I reviewed each one for print, kept what would hold up and replaced what wouldn’t. I cleared image permissions, prepared the print files, worked with the printers on estimates and schedules, and managed shipping and delivery.</p></div>
+    </div>
+    <figure class="wide tight">
+      <div class="tbl fig-encz" style="--a:16/7.4" role="img" aria-label="Four editions of the guide side by side: Ski & Snowboard Club Vail in light blue, Aspen Valley Ski & Snowboard Club in green, Burke Mountain Academy in navy and the Czech Ski Association in Czech, each with its own color, athletes' photos and logo on the same layout"><div class="fplane" style="--rx:26deg;--rz:-6deg;--s:1"><div class="bk ab" style="left:7cqw;top:10cqw;width:20cqw;--rot:-2.5deg;z-index:1;--ar:0.7725;--t:0.420cqw;--spine:rgb(104,122,166)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-32.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+<div class="bk ab" style="left:29cqw;top:9cqw;width:20cqw;--rot:1.5deg;z-index:2;--ar:0.7725;--t:0.420cqw;--spine:rgb(71,94,91)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-33.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+<div class="bk ab" style="left:51cqw;top:10.5cqw;width:20cqw;--rot:-1deg;z-index:3;--ar:0.7725;--t:0.420cqw;--spine:rgb(59,66,83)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-34.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div>
+<div class="bk ab" style="left:73cqw;top:9cqw;width:20cqw;--rot:2.5deg;z-index:4;--ar:0.7725;--t:0.420cqw;--spine:rgb(70,112,154)"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-35.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div></div></div>
+      <figcaption class="cap"><span class="cm">Four of the 12 editions on one design system, each cover in its organization&rsquo;s color, with its own athletes and logo. The Czech Ski Association edition is translated into Czech.</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <div class="two-col">
+      <div><span class="micro">04 / Print to video</span><h2 style="margin-top:18px">From the page<br>to video.</h2></div>
+      <div class="body">
+        <p>Beside the photomontages, QR codes open video of the same runs, which an athlete can slow down to watch the movement the stills break down.</p>
+        <p>The videos lived on Ron LeMaster’s own website. After his unexpected death, his site and its domain lapsed, and the codes stopped working. A close friend of LeMaster’s worked with his family to find the original footage. FWDI preferred to keep the videos with the book rather than on YouTube, so I moved them to a site of their own and made new QR codes for the newer books. Clubs still using older books got an insert card that points readers to the new site.</p>
+      </div>
+    </div>
+    <figure class="wide">
+      <div class="tbl fig-tactics" style="--a:16/8.8" role="img" aria-label="Athlete booklet open to a tactics spread: diagrams of open and closed gates and a hairpin, opposite a Veronika Velez-Zuzulová slalom photomontage with a QR code to the video"><div class="fplane" style="--rx:16deg;--rz:-4deg;--s:1"><div class="bk as" style="left:11cqw;top:3cqw;width:78cqw;--rot:0deg;z-index:1;--ar:1.545;--t:0.468cqw"><div class="sh"></div><div class="pg" style="background-image:url(assets/img/ysg-36.jpg)"><i class="e l"></i><i class="e r"></i><i class="e t"></i><i class="e b"></i></div></div></div></div>
+      <figcaption class="cap"><span class="cm">Athlete booklet, tactics spread, with the QR code to the video beside the photomontage. Photomontage and video © Ron LeMaster.</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="end">
+    <div class="endgrid">
+      <div><span class="micro">05 / Outcome</span><h2 style="margin-top:18px">Every edition<br>on time.</h2></div>
+      <div class="outcome">
+        <p>Twelve editions since 2018: ten for clubs, academies and federations, including the Czech Ski Association in Czech, plus Far West Skiing’s own and a generic edition, across several print runs, including reprints of the athlete and coach guides. Every edition was delivered on time. The video library is back online for the newer books, and the older ones point to it.</p>
+        <p>In 2024, Ski Racing Media turned the guide’s nine key concepts into a nine-part series on its website, built from the photomontages I supplied.</p>
+        <p>What made it work was a repeatable system: one design system and one intake process that absorbed each organization’s own content, shared runs that kept costs down, and books that stay in use alongside their videos. A printed book outlasts most websites, so I plan the link as carefully as the page: a domain set to renew automatically, with a calendar reminder as a backup, and codes that point to addresses that can be redirected without a reprint.</p>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+<nav class="nx" aria-label="Next project"><div class="nx-in"><div><p class="nx-lab">Next project</p><a class="nx-go" href="linsly-donnelly.html"><span>Linsly </span><span class="nw">Donnelly<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><p class="nx-sub">Brand, website and email for a mindset and longevity coach</p><a class="nx-all" href="./#work"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H4M9 5l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>All work</a></div><a class="nx-img" href="linsly-donnelly.html" tabindex="-1" aria-hidden="true"><img src="assets/img/ysg-37.jpg" alt="" width="960" height="541"></a></div></nav><footer class="dk" id="contact"><div class="dk-in"><h2 class="dk-sr">Contact</h2><div class="dk-top"><div><p class="dk-big">Let’s connect.</p><p class="dk-avail">Open to roles and select projects</p></div><div class="dk-mail"><span>Email</span><a href="mailto:sue@onlyeyedesign.com?subject=Hello%20from%20onlyeyedesign.com">sue@onlyeyedesign.com<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6M7 6h7v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div><div class="dk-bot"><span>© 2026 Only Eye Design, LLC · Park City, Utah</span><nav aria-label="Footer"><a href="sue-randall-resume.pdf">Resume (PDF)</a><a href="https://www.linkedin.com/in/suerandall">LinkedIn <span aria-hidden="true">↗</span></a><a href="#top">Back to top <span aria-hidden="true">↑</span></a></nav></div></div></footer>
+</body>
+</html>
