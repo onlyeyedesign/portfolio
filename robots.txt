@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://onlyeyedesign.com/sitemap.xml
+Sitemap: https://www.onlyeyedesign.com/sitemap.xml
